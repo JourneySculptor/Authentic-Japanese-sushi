@@ -1,0 +1,21 @@
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-div {
+  text-align: center;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h3, p {
+  text-align: center;
+}
+
+li strong{
+  display: block;
+}
