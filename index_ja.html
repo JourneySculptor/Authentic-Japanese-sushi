@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +7,41 @@
     <title>Authentic Japanese Sushi</title>
   </head>
   <body>
+     <button id="switch-lang" onclick="switchLanguage()">日本語</button>
     <main id="main">
-      <h1 id="title">本格的な日本のお寿司</h1>
-      <p>お寿司は小さな子供からお年寄りまで、多くの日本人に愛されています。</p>
+      <h1 id="title">Authentic Japanese Sushi</h1>
+      <p>In Japan, sushi is beloved by people of all ages, from young children to the elderly.</p>
       <figure id="img-div">
         <img
           id="image"
-          src="https://raw.githubusercontent.com/JourneySculptor/Authentic-Japanese-sushi/main/A%20beautifully%20arranged%20set%20of%20traditional%20Japanese%20nigiri%20sushi.webp?token=GHSAT0AAAAAACW22QUDIXOEXMHVBJLCG33CZWWRAEA">
+          src="https://raw.githubusercontent.com/JourneySculptor/Authentic-Japanese-sushi/main/A%20beautifully%20arranged%20set%20of%20traditional%20Japanese%20nigiri%20sushi.webp?token=GHSAT0AAAAAACW22QUDIXOEXMHVBJLCG33CZWWRAEA"
+          alt="A delicious-looking set of Japanese sushi">
         <figcaption id="img-caption">
-           新鮮な材料を使った、美味くて本格的な日本の握り寿司です。
+          Japanese sushi is a traditional dish that combines vinegared rice with fresh seafood, offering a delicate balance of flavors. It's known for its artistic presentation and emphasis on fresh, high-quality ingredients. 
         </figcaption>
       </figure>
       <section id="tribute-info">
-        <h3 id="headline">お寿司の食べ方</h3>
+        <h3 id="headline">Sushi Etiquette</h3>
         <ul>
-          <li><strong>手で食べる</strong> 
-            <br>握り寿司は箸などを使わずに、手を使って食べます。もちろんお箸を使って食べることも可能です。</br>
-　　　</li>
-          <li><strong>醤油を付けて食べる</strong> 
-            <br>お寿司に醤油は欠かせません。一般的に醤油は、シャリではなく寿司ネタの方に付けます。ご飯に醤油を多く付けてしまうと、お米が醤油をたくさん吸い込み、かなりしょっぱくなります。そのためお魚の方に付けて食べることをおすすめします。</br>
-　　　</li>
-          <li><strong>山葵（ワサビ）</strong> 
-            <br>伝統的な日本の寿司職人は、寿司を握る際にシャリにワサビを付けます。ワサビの香りと風味で魚の生臭さが消えて、お寿司を美味しくいただくことが可能です。ただしワサビの辛みが苦手な方のために、ワサビは別添えにすることもできます。自分でワサビの量を調節して食べるのも、おすすめです。</br>
-       </li>
+          <li><strong>Eating with Fingers:</strong> Nigirizushi is traditionally eaten with the fingers, even in formal settings. Sashimi, on the other hand, is typically eaten with chopsticks.</li>
+          <li><strong>Dipping in Soy Sauce:</strong> When dipping sushi in soy sauce, turn the piece so that only the topping touches the sauce. This prevents the rice from absorbing too much soy sauce and falling apart.</li>
+          <li><strong>Wasabi:</strong> Traditionally, the chef adds the appropriate amount of wasabi to the sushi. It's usually not necessary to add more, though many restaurants now serve wasabi on the side.</li>
         </ul>
-        <p class="extra-space">
-          詳細なお寿司の歴史を知りたい方は、
-          <a id="tribute-link" href="https://en.wikipedia.org/wiki/Sushi" target="_blank">Wikipediaをご覧ください。</a>
+        <p>
+          For more details on the history of sushi, please refer to
+          <a id="tribute-link" href="https://en.wikipedia.org/wiki/Sushi" target="_blank">Wikipedia.</a>
         </p>
       </section>
     </main>
+    <script>
+        function switchLanguage() {
+            const currentUrl = window.location.href;
+            if (currentUrl.includes("index.html")) {
+                window.location.href = "index_ja.html";
+            } else if (currentUrl.includes("index_ja.html")) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
   </body>
 </html>
