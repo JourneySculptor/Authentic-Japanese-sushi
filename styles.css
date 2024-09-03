@@ -17,10 +17,40 @@ h1, h3, p {
 }
 
 li {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 20px; 
 }
 
 
 li strong{
   display: block;
+}
+
+section {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
