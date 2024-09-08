@@ -35,13 +35,14 @@
     </main>
     <script>
         function switchLanguage() {
-            const currentUrl = window.location.href;
-            if (currentUrl.includes("index.html")) {
-                window.location.href = "https://journeysculptor.github.io/Authentic-Japanese-sushi/index_ja.html";
-            } else if (currentUrl.includes("index_ja.html")) {
-                window.location.href = "https://journeysculptor.github.io/Authentic-Japanese-sushi/index.html";
-            }
-        }
+    const currentUrl = window.location.href;
+    if (currentUrl.endsWith("/") || currentUrl.endsWith("index.html")) {
+        window.location.href = "https://journeysculptor.github.io/Authentic-Japanese-sushi/index_ja.html";
+    } 
+    else if (currentUrl.endsWith("index_ja.html")) {
+        window.location.href = "https://journeysculptor.github.io/Authentic-Japanese-sushi/index.html";
+    }
+}
     </script>
   </body>
 </html>
