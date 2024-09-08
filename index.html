@@ -7,6 +7,7 @@
     <title>Authentic Japanese Sushi</title>
   </head>
   <body>
+    <button id="switch-lang" onclick="switchLanguage()">日本語</button>
     <main id="main">
       <h1 id="title">Authentic Japanese Sushi</h1>
       <p>In Japan, sushi is beloved by people of all ages, from young children to the elderly.</p>
@@ -32,5 +33,15 @@
         </p>
       </section>
     </main>
+    <script>
+        function switchLanguage() {
+            const currentUrl = window.location.href;
+            if (currentUrl.includes("index.html")) {
+                window.location.href = "index_ja.html";
+            } else if (currentUrl.includes("index_ja.html")) {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
   </body>
 </html>
