@@ -8,6 +8,7 @@
   </head>
   <body>
     <button id="switch-lang" onclick="switchLanguage()">Japanese 日本語</button>
+    <button id="theme-toggle">Switch to Dark Mode</button>
     <main id="main">
       <h1 id="title">Authentic Japanese Sushi</h1>
       <p>In Japan, sushi is beloved by people of all ages, from young children to the elderly.</p>
@@ -43,6 +44,20 @@
         window.location.href = "https://journeysculptor.github.io/Authentic-Japanese-sushi/index.html";
     }
 }
+
+      const themeToggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      themeToggleButton.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+
+          if (body.classList.contains('dark-mode')) {
+          themeToggleButton.textContent = 'Switch to Light Mode';
+        } else {
+          themeToggleButton.textContent = 'Switch to Dark Mode';
+        }
+      });
+      
     </script>
   </body>
 </html>
