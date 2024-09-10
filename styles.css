@@ -4,6 +4,20 @@ body {
     margin: 20px;
 }
 
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode a#tribute-link {
+  color: #4d9ef7;
+}
+
+.dark-mode #tribute-info {
+  background-color: #444444;
+  border-color: #555555;
+}
+
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
