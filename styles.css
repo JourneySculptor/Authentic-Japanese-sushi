@@ -81,3 +81,9 @@ a#tribute-link:hover {
 h1, h3, p {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
